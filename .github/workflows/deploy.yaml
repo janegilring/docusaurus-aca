@@ -18,7 +18,11 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Set working directory
+        run: cd src/docusaurus
+
       - name: Install Dependencies
+        working-directory: src/docusaurus
         run: npm install
 
       - name: Build the App

@@ -1,6 +1,12 @@
 name: Run Tests
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - '**'  # All branches
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test:
@@ -25,7 +31,7 @@ jobs:
       - name: Install Jest
         working-directory: src/docusaurus
         run: npm install jest
-        
+
       - name: Run tests
         working-directory: src/docusaurus
         run: npm test

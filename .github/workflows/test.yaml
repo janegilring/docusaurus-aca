@@ -22,6 +22,10 @@ jobs:
         working-directory: src/docusaurus
         run: npm install
 
+      - name: Install Jest
+        working-directory: src/docusaurus
+        run: npm install jest
+        
       - name: Run tests
         working-directory: src/docusaurus
         run: npm test

@@ -19,6 +19,9 @@
     "@docusaurus/preset-classic": "^3.0.1",
     "@docusaurus/theme-mermaid": "^3.0.1"
   },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
   "browserslist": {
     "production": [
       ">0.5%",

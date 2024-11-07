@@ -1,0 +1,37 @@
+name: Run Tests
+
+on:
+  push:
+    branches:
+      - '**'  # All branches
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Set working directory
+        run: cd src/docusaurus
+
+      - name: Install Dependencies
+        working-directory: src/docusaurus
+        run: npm install
+
+      - name: Install Jest
+        working-directory: src/docusaurus
+        run: npm install jest
+
+      - name: Run tests
+        working-directory: src/docusaurus
+        run: npm test

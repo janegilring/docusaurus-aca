@@ -11,12 +11,16 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "test": "jest"
   },
   "dependencies": {
     "@docusaurus/core": "^3.0.1",
     "@docusaurus/preset-classic": "^3.0.1",
     "@docusaurus/theme-mermaid": "^3.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
   },
   "browserslist": {
     "production": [

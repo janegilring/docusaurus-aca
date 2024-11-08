@@ -11,4 +11,4 @@ Docusaurus-ACA is an advanced repository that provides an Azure Development CLI 
 
 Hello SKY1002 students! :smile: :raised_hands:
 
-Modified by kandidat 304
+Modified by kandidat 304 08.11.2024
